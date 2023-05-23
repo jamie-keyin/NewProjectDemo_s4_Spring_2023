@@ -34,7 +34,7 @@ public class CourseAdminTest {
 
     @Test
     @DisplayName("Test Get Course List By Student")
-    public void testGetCourseListByStudent_Failing() {
+    public void testGetCourseListByStudent_Passing() {
         CourseAdmin courseAdmin = new CourseAdmin();
 
         Student student = new Student();
@@ -43,7 +43,7 @@ public class CourseAdminTest {
 
         Course course = new Course();
         course.setId(1);
-        course.setName("Java");
+        course.setName("JavaScript");
 
         courseAdmin.addCourseToStudent(student, course);
 
